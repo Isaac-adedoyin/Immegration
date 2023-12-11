@@ -577,7 +577,7 @@
         function sendEmail() {
             Email.send({
             Host: "smtp.elasticemail.com",
-            Username: "ibright053@gmail.com",
+            Username: "info@ibiteesintegratedventures.com.ng",
             Password: "E88EAAC49AE1F2C2DB9E5D45539225BF7F9D",
             To: '',
             From: document.getElementById('email').value,
@@ -587,7 +587,40 @@
             message => alert(message)
         );
         }
-        
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("nM9q63J5Gw8kgvkXC");
+        })();
+    </script>
+    <script>
+        function sendMail() {
+            var params = {
+                name: document.getElementById('contact_name').value,
+                email: document.getElementById('contact_email').value,
+                subject: document.getElementById('contact_subject').value,
+                message: document.getElementById('contact_message').value,
+            };
+    
+            const serviceID = "service_hmu4qpe";
+            const templateID = "template_5xk58rb";
+    
+            emailjs.send(serviceID, templateID, params)
+                .then(
+                    res => {
+                        document.getElementById("contact_name").value = "";
+                        document.getElementById("contact_email").value = "";
+                        document.getElementById("contact_subject").value = "";
+                        document.getElementById("contact_value").value = "";
+                        console.log(res);
+                        alert("your message was sent successfully");
+                    }
+                )
+                .catch((err) => console.log(err));
+    
+        }
     </script>
     <script src="js/map.js"></script>
     <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
