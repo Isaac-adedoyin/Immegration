@@ -77,8 +77,7 @@
                                     <!-- site-branding -->
                                     <div class="site-branding">
                                         <a class="home-link" href="header-style-02.html" title="Ibitees" rel="home">
-                                            <!-- <img id="logo-img" class="img-center" src="../tripzia/images/ibitee.png" alt="logo-img"> -->
-                                            <!-- <img src="../tripzia/images/white_logo-img.png" alt=""> -->
+                                            <img id="logo-img" class="img-center" src="../tripzia/images/IBIT-preview.png" alt="logo-img" style="margin-bottom: -5px;">
                                         </a>
                                     </div><!-- site-branding end -->
                                     <!-- widget-info -->
@@ -807,36 +806,48 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <form id="contact_form" class="contact_form wrap-form clearfix" method="post" novalidate="novalidate" action="#">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <label>
-                                                    <span class="text-input"><input name="name" type="text" value="" placeholder="Your Name" required="required"></span>
-                                                </label>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <label>
-                                                    <span class="text-input"><input name="address" type="text" value="" placeholder="Your Email" required="required"></span>
-                                                </label>
-                                            </div>
+                                    <form id="contact_form" class="contact_form wrap-form clearfix"
+                                    novalidate="novalidate" method="POST">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <label>
+                                                <span class="text-input"><input name="name" type="text" value=""
+                                                        placeholder="Your Name" id="name"
+                                                        required="required"></span>
+                                            </label>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <label>
-                                                    <span class="text-input"><input name="phone" type="text" value="" placeholder="Phone Number" required="required"></span>
-                                                </label>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <label>
-                                                    <span class="text-input"><input name="phone" type="text" value="" placeholder="Subject" required="required"></span>
-                                                </label>
-                                            </div>
+                                        <div class="col-lg-6">
+                                            <label>
+                                                <span class="text-input"><input name="address" type="text"
+                                                        value="" placeholder="Your Email" id="email"
+                                                        required></span>
+                                            </label>
                                         </div>
-                                        <label>
-                                            <span class="text-input"><textarea name="message" rows="4" placeholder="Message" required="required"></textarea></span>
-                                        </label>
-                                        <button class="submit cmt-btn cmt-btn-size-lg cmt-btn-shape-rounded cmt-btn-style-border cmt-btn-color-dark w-100" type="submit">Submit Request !</button>
-                                    </form>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <label>
+                                                <span class="text-input"><input name="phone" type="text"
+                                                        value="" placeholder="Phone Number" id="phone"
+                                                        required></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label>
+                                                <span class="text-input"><input name="phone" type="text"
+                                                        value="" placeholder="Subject" id="subject"
+                                                        required></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label>
+                                        <span class="text-input"><textarea name="message" rows="4"
+                                                placeholder="Message" id="message" required></textarea></span>
+                                    </label>
+                                    <button
+                                        class="submit cmt-btn cmt-btn-size-lg cmt-btn-shape-rounded cmt-btn-style-border cmt-btn-color-dark w-100"
+                                        type="submit" id="validationBtn">Submit Request !</button>
+                                </form>
                                 </div>
                             </div>
                         </div>
@@ -1029,6 +1040,16 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/app.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../tripzia/js/app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("osd0i7Kx7UN6njwy6");
+        })();
+    </script>
 
     <!-- Revolution Slider -->
     
