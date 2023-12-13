@@ -1283,7 +1283,7 @@ ul.social-icons{
     font-size: 12px;
     min-width: 40px;
 }
-.cmt-header-style-02 .top_bar .social-icons li a { min-width: 26px; }
+.cmt-index .top_bar .social-icons li a { min-width: 26px; }
 
 .top_bar ul li.facebook-icon a {
     background-color: #385da9;
