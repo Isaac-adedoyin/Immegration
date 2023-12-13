@@ -111,35 +111,35 @@
                 getIn = getNav.find("ul.menu").data("in"),
                 getOut = getNav.find("ul.menu").data("out");
             
-            if ( matchMedia( 'only screen and (max-width: 1200px)' ).matches ) {
+            // if ( matchMedia( 'only screen and (max-width: 1200px)' ).matches ) {
                                                      
-                // Enable click event
-                $("nav.main-menu ul.menu").each(function(){
+            //     // Enable click event
+            //     $("nav.main-menu ul.menu").each(function(){
                     
-                    // Dropdown Fade Toggle
-                    $("a.mega-menu-link", this).on('click', function (e) {
-                        e.preventDefault();
-                        var t = $(this);
-                        t.toggleClass('active').next('ul').toggleClass('active');
-                    });   
+            //         // Dropdown Fade Toggle
+            //         $("a.mega-menu-link", this).on('click', function (e) {
+            //             e.preventDefault();
+            //             var t = $(this);
+            //             t.toggleClass('active').next('ul').toggleClass('active');
+            //         });   
 
-                    // Megamenu style
-                    $(".megamenu-fw", this).each(function(){
-                        $(".col-menu", this).each(function(){
-                            $(".title", this).off("click");
-                            $(".title", this).on("click", function(){
-                                $(this).closest(".col-menu").find(".content").stop().toggleClass('active');
-                                $(this).closest(".col-menu").toggleClass("active");
-                                return false;
-                                e.preventDefault();
+            //         // Megamenu style
+            //         $(".megamenu-fw", this).each(function(){
+            //             $(".col-menu", this).each(function(){
+            //                 $(".title", this).off("click");
+            //                 $(".title", this).on("click", function(){
+            //                     $(this).closest(".col-menu").find(".content").stop().toggleClass('active');
+            //                     $(this).closest(".col-menu").toggleClass("active");
+            //                     return false;
+            //                     e.preventDefault();
                                 
-                            });
+            //                 });
 
-                        });
-                    });  
+            //             });
+            //         });  
                     
-                }); 
-            }
+            //     }); 
+            // }
         },
     };
 
