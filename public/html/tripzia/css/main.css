@@ -2233,3 +2233,6 @@ article.cmt-blog-classic .cmt-box-post-date .cmt-entry-date{
     font-size: 24px;
     font-weight: 700;
 }
+.blog-list li{
+    margin-top: 10px;
+}
