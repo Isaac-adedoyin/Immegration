@@ -2207,3 +2207,29 @@ article.cmt-blog-classic .cmt-box-post-date .cmt-entry-date{
 /*  Map
 /*------------------------------------------------------------------------------*/   
 #map { display: block; height: 400px; width: 100%; }
+
+/*----------------------------------------------------------------------------- */
+/* Custom styling
+/*----------------------------------------------------------------------------- */
+
+.blog-header,
+.blog-sub-header{
+    margin-bottom: 30px;
+    color: #2457aa;
+    font-weight: 700;
+}
+.blog-text{
+    font-size: 18px;
+}
+.blog-sub-header{
+    margin-bottom: 0px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.blog-title{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #2457aa;
+    font-size: 24px;
+    font-weight: 700;
+}
